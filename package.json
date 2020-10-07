@@ -1,0 +1,23 @@
+{
+  "name": "sf-drive_homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass static/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bloommmy/SF-Drive_homework.git"
+  },
+  "author": "Markova Olga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bloommmy/SF-Drive_homework/issues"
+  },
+  "homepage": "https://github.com/Bloommmy/SF-Drive_homework#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

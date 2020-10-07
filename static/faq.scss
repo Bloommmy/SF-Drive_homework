@@ -1,0 +1,86 @@
+@import "variables";
+
+.FAQ_text {
+  font-size: 24px;
+  line-height: 147.3%;
+  color: #1B1B1B;
+}
+
+.quest_icon::after {
+  content: $icon-off-FAQ;
+  width: 16px;
+  float: right;
+  margin-left: 5px;
+}
+
+.questions {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 80%);
+  grid-template-rows: auto;
+  grid-gap: 1.5vw;
+  justify-content: center;
+  align-content: center;
+  padding: 6% 0%;
+}
+
+.quest {
+  display: grid;
+  background: #F7F7F8;
+  grid-template-columns: 80% 20%;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.quest_text {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 147.3%;
+  color: $Black;
+}
+.quest_icon {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.quest:hover {
+  background-color: rgba(97, 161, 153, 0.1);
+}
+
+.active {
+  background: rgba(97, 161, 153, 0.15);
+
+  .quest_icon::after {
+    content: $icon-on-FAQ;
+  }
+  .quest_text {
+    color: #61A199;
+    font-weight: 500;
+  }
+}
+
+.answer {
+  width: 80%;
+  padding: 0 18px 25px 18px;
+  display: none;
+  overflow: hidden;
+  font-size: 20px;
+  line-height: 147.3%;
+  color: #1B1B1B;
+}
+
+@media screen and (max-width: 600px) {
+  .quest_text, .answer {
+    font-size: 14px;
+  }
+  .FAQ_text {
+    font-size: 16px;
+  }
+}

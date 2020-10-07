@@ -1,0 +1,72 @@
+.about_us_text {
+  line-height: 147.3%;
+  font-size: 24px;
+  text-align: center;
+  padding: 0% 10% 8% 10%; }
+
+.contacts {
+  background-color: #F7F9FB; }
+  .contacts .contacts_all {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    padding: 0% 0% 6% 0%; }
+    .contacts .contacts_all .contacts_email, .contacts .contacts_all .contacts_phone {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .contacts .contacts_all .contacts_header, .contacts .contacts_all .contacts_content {
+      font-style: normal;
+      font-weight: normal;
+      line-height: 147.3%; }
+    .contacts .contacts_all .contacts_header {
+      font-size: 14px;
+      color: #4F4F4F; }
+    .contacts .contacts_all .contacts_content {
+      font-size: 20px;
+      color: #1b1b1b; }
+
+.team_member {
+  display: grid;
+  grid-template-columns: repeat(4, 180px);
+  grid-auto-rows: auto;
+  grid-gap: 4vw;
+  justify-content: center;
+  align-content: center;
+  padding: 0% 0% 6% 0%; }
+  .team_member .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .team_member .team .team_name {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 147.3%;
+      color: #1b1b1b;
+      padding: 8% 0% 4% 0%; }
+    .team_member .team .team_position {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 147.3%;
+      color: #828282; }
+
+@media screen and (max-width: 600px) {
+  .contacts_all {
+    grid-template-columns: repeat(1, 100%); }
+  .contacts_email {
+    padding: 0% 0% 6% 0%; }
+  .about_us_text {
+    font-size: 16px; }
+  .contacts_header {
+    font-size: 12px; }
+  .contacts_content {
+    font-size: 14px; }
+  .team_member {
+    grid-template-columns: repeat(2, 180px); }
+  .team_name {
+    font-size: 16px; }
+  .team_position {
+    font-size: 12px; }
+  .team_photo {
+    width: 50%; } }

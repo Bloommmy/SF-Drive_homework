@@ -1,0 +1,11 @@
+.small {
+  display: none; }
+
+@media screen and (max-width: 600px) {
+  .small {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer; }
+  .menu {
+    display: none; } }

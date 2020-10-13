@@ -2,10 +2,12 @@
   "name": "sf-drive_homework",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass static/ -o css/"
+    "scss": "node-sass SCSS/ -o src/static/",
+    "build": "webpack",
+    "start:dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,20 @@
   "homepage": "https://github.com/Bloommmy/SF-Drive_homework#readme",
   "dependencies": {
     "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "eslint": "^7.10.0",
+    "eslint-loader": "^4.0.2",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.0.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "pug": "^3.0.0",
+    "pug-loader": "^2.4.0",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
